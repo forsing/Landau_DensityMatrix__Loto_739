@@ -7,9 +7,9 @@ import csv
 from pathlib import Path
 import numpy as np
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 N, K, D, START, WINDOW = 39, 7, 16, 32, 768
 
@@ -391,7 +391,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: podesavanje matrice gustine.
 Validacija: redovi 4587..4634; alpha=10; prosek=1.1250
 Test: redovi 4635..4698
@@ -399,7 +399,7 @@ Landau Quantum v2: prosek=1.0625; pogodaka 0..7=[16, 32, 12, 4, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Gustina bez vremenskog uslovljavanja: prosek=1.1719; pogodaka 0..7=[13, 30, 18, 3, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 6,11,15,21,25,31,35
+SLEDECI RED 4699: 6,x,15,y,25,z,35
 S=0.6367982401; iteracija=38; Tr(rho^2)=0.437876
 S je skor rangiranja. Pretraga je deterministicka; globalni maksimum nije potvrden.
 
@@ -407,7 +407,7 @@ S je skor rangiranja. Pretraga je deterministicka; globalni maksimum nije potvrd
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: podesavanje matrice gustine.
 Validacija: redovi 2860..2907; alpha=100; prosek=1.1042
 Test: redovi 2908..2971
@@ -415,7 +415,7 @@ Landau Quantum v2: prosek=1.3438; pogodaka 0..7=[14, 24, 18, 6, 2, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Gustina bez vremenskog uslovljavanja: prosek=1.1875; pogodaka 0..7=[11, 34, 15, 4, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 6,10,15,20,24,30,35
+SLEDECI RED 2972: 6,x,15,y,24,z,35
 S=0.6762174535; iteracija=40; Tr(rho^2)=0.487903
 S je skor rangiranja. Pretraga je deterministicka; globalni maksimum nije potvrden.
 
@@ -423,7 +423,7 @@ S je skor rangiranja. Pretraga je deterministicka; globalni maksimum nije potvrd
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: podesavanje matrice gustine.
 Validacija: redovi 1616..1663; alpha=1; prosek=1.3333
 Test: redovi 1664..1727
@@ -431,7 +431,7 @@ Landau Quantum v2: prosek=1.0938; pogodaka 0..7=[12, 38, 10, 4, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Gustina bez vremenskog uslovljavanja: prosek=1.2344; pogodaka 0..7=[13, 28, 18, 5, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 5,11,15,20,25,30,35
+SLEDECI RED 1728: 5,x,15,y,25,z,35
 S=0.6449312415; iteracija=36; Tr(rho^2)=0.447870
 S je skor rangiranja. Pretraga je deterministicka; globalni maksimum nije potvrden.
 """
@@ -470,7 +470,7 @@ Matrica gustine prošla je provere normalizacije i nenegativnosti, a promena bud
 Samostalan model matrice gustine, izračunat NumPy-em.
 
 Predlog za red 4699:
-6, 11, 15, 21, 25, 31, 35
+6, x, 15, y, 25, z, 35
 
 
 Na poslednja 64 kola:
