@@ -9,9 +9,9 @@ import numpy as np
 from scipy.sparse import csr_matrix
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 N, K, SIZE, WINDOW, START = 39, 7, 8, 128, 2
 
@@ -457,7 +457,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -471,13 +471,13 @@ LANDAU V2a MATRICA GUSTINE: prosek=1.3906; pogodaka 0..7=[14, 25, 14, 9, 1, 1, 0
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Ista gustina bez evolucije: prosek=1.3906; pogodaka 0..7=[14, 25, 14, 9, 1, 1, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 8,9,10,12,13,28,34
+SLEDECI RED 4699: 8,x,10,y,13,z,34
 Born_skor=0.1763516905; Tr(rho)=1.0000000000; kandidata=28772
 Skor se odnosi na kandidatni skup: istorijske kombinacije i zamene jednog broja.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -491,13 +491,13 @@ LANDAU V2a MATRICA GUSTINE: prosek=1.1562; pogodaka 0..7=[12, 35, 12, 5, 0, 0, 0
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Ista gustina bez evolucije: prosek=1.1562; pogodaka 0..7=[12, 35, 12, 5, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 2,7,15,18,27,28,29
+SLEDECI RED 2972: 2,x,15,y,27,z,29
 Born_skor=0.2293035520; Tr(rho)=1.0000000000; kandidata=28772
 Skor se odnosi na kandidatni skup: istorijske kombinacije i zamene jednog broja.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -511,7 +511,7 @@ LANDAU V2a MATRICA GUSTINE: prosek=1.2031; pogodaka 0..7=[9, 35, 18, 2, 0, 0, 0,
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Ista gustina bez evolucije: prosek=1.0781; pogodaka 0..7=[13, 36, 12, 3, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 1,3,5,11,19,27,30
+SLEDECI RED 1728: 1,x,5,y,19,z,30
 Born_skor=0.0007436729; Tr(rho)=1.0000000000; kandidata=28772
 Skor se odnosi na kandidatni skup: istorijske kombinacije i zamene jednog broja.
 """
@@ -528,9 +528,9 @@ Kandidatni skup činiće stvarne istorijske kombinacije i njihove zamene jednog 
 Proseci su za poslednja 64 test-kola:
 
 Fajl / sledeći red      Predlog	            V2a	    Prethodna kombinacija
-Objedinjeni / 4699	    8,9,10,12,13,28,34  1,3906	1,2188
-Loto / 2972	            2,7,15,18,27,28,29	1,1562	1,2969
-Loto Plus / 1728	    1,3,5,11,19,27,30	1,2031	1,2969
+Objedinjeni / 4699	    8,x,10,y,13,z,34    1,3906	1,2188
+Loto / 2972	            2,x,15,y,27,z,29	1,1562	1,2969
+Loto Plus / 1728	    1,x,5,y,19,z,30	    1,2031	1,2969
 
 Kandidati su istorijske kombinacije i njihove zamene jednog broja.
 """
